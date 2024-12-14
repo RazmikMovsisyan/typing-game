@@ -80,6 +80,7 @@ body {
     margin-top: 15px;
     display: flex;
     padding: 15px 0;
+    gap: 15px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -93,4 +94,25 @@ body {
     font-size: 17px;
     font-weight: 600;
     border: 3px solid #FFF;
+}
+
+.content .result-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+.result-details li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+
+.result-details li span, .result-details li p {
+    display: block;
+    font-size: 13px;
+    margin-left: 10px;
 }

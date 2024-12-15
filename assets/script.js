@@ -119,3 +119,8 @@ function finishGame() {
   clearInterval(timer);
   inpField.value = "";
 }
+
+// Starting/initializing the game
+loadParagraph();
+inpField.addEventListener("input", handleTyping);
+tryAgainBtn.addEventListener("click", resetGame);

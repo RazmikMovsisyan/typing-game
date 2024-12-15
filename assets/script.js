@@ -83,3 +83,16 @@ function handleTyping() {
 
   updateStats();
 }
+ // Timer function
+function startTimer() {
+  isTyping = true;
+  timer = setInterval(() => {
+      if (--timeLeft > 0) {
+          timeTag.innerText = timeLeft;
+          updateStats(); // Update WPM during countdown
+      } else {
+          clearInterval(timer); // Stopping the timer
+          finishGame();
+      }
+  }, 1000);
+}

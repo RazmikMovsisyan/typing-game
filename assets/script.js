@@ -29,3 +29,11 @@ const timeTag = document.querySelector(".time span b");
 const mistakeTag = document.querySelector(".mistake span");
 const wpmTag = document.querySelector(".wpm span");
 const cpmTag = document.querySelector(".cpm span");
+
+// Declaring variables for game logic
+let timer;
+let maxTime = 60;
+let timeLeft = maxTime;
+let charIndex = 0;
+let mistakes = 0;
+let isTyping = false;

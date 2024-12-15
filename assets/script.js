@@ -19,3 +19,4 @@ const paragraphs = [
   
     "Programming and typing are like two sides of the same coin. When you improve one, the other often follows. Typing code quickly allows you to experiment and iterate faster, which is critical in problem-solving. Embrace daily practice, and you’ll soon type like a pro and code with confidence."
   ];
+

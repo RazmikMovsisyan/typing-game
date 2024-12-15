@@ -37,3 +37,15 @@ let timeLeft = maxTime;
 let charIndex = 0;
 let mistakes = 0;
 let isTyping = false;
+
+function loadParagraph() {
+  const randomIndex = Math.floor(Math.random() * paragraphs.length);
+  typingText.innerHTML = [...paragraphs[randomIndex]]
+    .map(char => `<span>${char}</span>`)
+    .join("");
+  typingText.firstElementChild.classList.add("active");
+
+  const focusInput = () => inpField.focus();
+  document.addEventListener("keydown", focusInput);
+  typingText.addEventListener("click", focusInput);
+}

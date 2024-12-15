@@ -38,13 +38,16 @@ let charIndex = 0;
 let mistakes = 0;
 let isTyping = false;
 
+// Load a random paragraph and display it
 function loadParagraph() {
   const randomIndex = Math.floor(Math.random() * paragraphs.length);
   typingText.innerHTML = [...paragraphs[randomIndex]]
     .map(char => `<span>${char}</span>`)
     .join("");
-  typingText.firstElementChild.classList.add("active");
 
+  typingText.firstElementChild.classList.add("active");
+  
+  // Automatically focus the input field on keydown or click
   const focusInput = () => inpField.focus();
   document.addEventListener("keydown", focusInput);
   typingText.addEventListener("click", focusInput);

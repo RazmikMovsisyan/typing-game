@@ -8,13 +8,15 @@
     font-family: Orbitron, sans-serif;
 }
 
+button, a {
+    cursor: pointer;
+}
 body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
-    min-height: 90vh;
+    min-height: 100vh;
     background: #252525;
     padding: 1vw 10vw;
 }
@@ -22,6 +24,7 @@ body {
 .logo {
     color: #fff;
 }
+
 #paragraph {
     color: #ffffff60;
 }
@@ -30,8 +33,13 @@ body {
     color: #fff;
 }
 
+.result-details:hover, .logo:hover:hover {
+    color:#00FF00;
+    transition: 0.9s;
+}
+
 .wrapper {
-    padding: 50px;
+    padding: 0px;
 }
 
 .wrapper .input-field {
@@ -47,6 +55,10 @@ body {
 
 .typing-text p span {
     position: relative;
+}
+
+.time > span {
+    color:#00FF00;
 }
 
 .typing-text p {
@@ -76,7 +88,7 @@ body {
     left: 0;
     opacity: 0;
     border-radius: 5px;
-    background: rgb(0 135 210);
+    background: #00FF00;
     animation: blink 1s ease-in-out infinite;
 }
 
@@ -93,7 +105,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-top: 2px solid #FFF;
+    border-top: 1px solid #FFF;
 }
 .content button {
     width: 110px;
@@ -102,7 +114,7 @@ body {
     padding: 10px 0;
     font-size: medium;
     font-weight: 600;
-    border: 2px solid #FFF;
+    border: 1px solid #FFF;
     transition: transform 0.2s ease;
 
 }
@@ -112,9 +124,9 @@ body {
 
 }
 .content button:hover {
-    color: #fff;
-    text-shadow: 2px 3px 1px rgb(0 135 210);
-    border: 3px solid rgb(0 135 210);  
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    transition: 0.9s;
 }
 
 .content .result-details {
@@ -136,4 +148,23 @@ body {
     display: block;
     font-size: 13px;
     margin-left: 10px;
+}
+
+footer {
+    color: #ffffff60;
+    width: 100%;
+    position: relative; /* Ändere dies von absolute auf relative */
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: auto;
+    text-align: center;
+    border: 1px solid #FFF;
+}
+
+footer:hover {
+    color: #00FF00;
+    border: 1px solid #FFF;
+    border: 1px solid #00FF00; 
+    transition: 0.9s;
 }

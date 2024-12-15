@@ -218,3 +218,25 @@ footer:hover {
         font-size: x-small;
     }
 }
+
+/* Larger Screens*/
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 60px;
+    }
+
+    .message {
+        font-size: large;
+    }
+
+    .typing-text p {
+        font-size: xx-large;
+    }
+
+    .result-details li span, .result-details li p {
+        font-size: larger;
+    }
+    .content button {
+        width: 100%;
+    }
+}

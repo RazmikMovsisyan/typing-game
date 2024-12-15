@@ -96,3 +96,11 @@ function startTimer() {
       }
   }, 1000);
 }
+
+// Update WPM, CPM, and mistakes
+function updateStats() {
+  const wpm = Math.max(Math.round(((charIndex - mistakes) / 5) / ((maxTime - timeLeft) / 60)), 0);
+  wpmTag.innerText = wpm;
+  cpmTag.innerText = charIndex - mistakes;
+  mistakeTag.innerText = mistakes;
+}

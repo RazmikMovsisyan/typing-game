@@ -52,3 +52,34 @@ function loadParagraph() {
   document.addEventListener("keydown", focusInput);
   typingText.addEventListener("click", focusInput);
 }
+
+// Typing Logic Function
+function handleTyping() {
+  const characters = typingText.querySelectorAll("span");
+  const typedChar = inpField.value[charIndex];
+
+  if (charIndex >= characters.length || timeLeft <= 0) return finishGame();
+
+  if (!isTyping) startTimer();
+
+  //Allowing user to backspace
+  if (typedChar == null) {
+      if (charIndex > 0) {
+          charIndex--; // Move back to the previous character
+          if (characters[charIndex].classList.contains("incorrect")) mistakes--;
+          characters[charIndex].classList.remove("correct", "incorrect", "active"); // Reduce mistake count if an incorrect character is deleted
+      }
+
+  } else { // Check Character if correct or incorrect
+      const isCorrect = characters[charIndex].innerText === typedChar;
+      characters[charIndex].classList.add(isCorrect ? "correct" : "incorrect");
+      if (!isCorrect) mistakes++;
+      charIndex++;
+  }
+
+//Update activated character
+  characters.forEach(span => span.classList.remove("active"));
+  if (charIndex < characters.length) characters[charIndex].classList.add("active");
+
+  updateStats();
+}

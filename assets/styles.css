@@ -214,4 +214,7 @@ footer:hover {
     .content button {
         width: 100%;
     }
+    footer {
+        font-size: x-small;
+    }
 }

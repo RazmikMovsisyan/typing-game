@@ -1,3 +1,4 @@
+// Auto-Generated Random Paragraphs for typing
 const paragraphs = [
     "Typing fast with all ten fingers is a skill every programmer should master. It allows you to write code efficiently and focus more on logic and problem-solving. Practice is key—start slow and build speed over time. Remember, accuracy is more important than speed initially. With dedication, you'll find typing becomes second nature.",
   
@@ -20,3 +21,11 @@ const paragraphs = [
     "Programming and typing are like two sides of the same coin. When you improve one, the other often follows. Typing code quickly allows you to experiment and iterate faster, which is critical in problem-solving. Embrace daily practice, and you’ll soon type like a pro and code with confidence."
   ];
 
+// Selecting DOM elements
+const typingText = document.querySelector(".typing-text p");
+const inpField = document.querySelector(".wrapper .input-field");
+const tryAgainBtn = document.querySelector(".content button");
+const timeTag = document.querySelector(".time span b");
+const mistakeTag = document.querySelector(".mistake span");
+const wpmTag = document.querySelector(".wpm span");
+const cpmTag = document.querySelector(".cpm span");

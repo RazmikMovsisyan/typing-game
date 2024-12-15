@@ -113,3 +113,9 @@ function resetGame() {
   [timeTag, wpmTag, mistakeTag, cpmTag].forEach(tag => tag.innerText = 0);
   loadParagraph();
 }
+
+// End the game
+function finishGame() {
+  clearInterval(timer);
+  inpField.value = "";
+}

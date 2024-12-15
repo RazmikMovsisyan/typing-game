@@ -104,3 +104,12 @@ function updateStats() {
   cpmTag.innerText = charIndex - mistakes;
   mistakeTag.innerText = mistakes;
 }
+
+// Reset the game
+function resetGame() {
+  clearInterval(timer);
+  [timeLeft, charIndex, mistakes, isTyping] = [maxTime, 0, 0, false];
+  inpField.value = "";
+  [timeTag, wpmTag, mistakeTag, cpmTag].forEach(tag => tag.innerText = 0);
+  loadParagraph();
+}

@@ -117,7 +117,11 @@ function resetGame() {
 // End the game
 function finishGame() {
   clearInterval(timer);
-  inpField.value = "";
+  inpField.value = "";  const wpm = Math.max(Math.round(((charIndex - mistakes) / 5) / ((maxTime - timeLeft) / 60)), 0);
+  
+  typingText.innerHTML = `
+    <p style="text-align: center; font-size: 1.5rem; font-weight: bold; color: #ff0000;">Time is up</p>
+    <p style="text-align: center; font-size: 1.5rem; color: #00FF00;">Your WPM is: ${wpm} !</p>`;
 }
 
 // Starting/initializing the game

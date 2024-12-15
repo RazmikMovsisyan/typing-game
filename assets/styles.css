@@ -58,7 +58,7 @@ body {
 }
 
 .wrapper {
-    padding: 0px;
+    padding: 40px;
 }
 
 .wrapper .input-field {
@@ -69,7 +69,7 @@ body {
 
 .content-box .typing-text {
     overflow: hidden;
-    max-height: 260px;
+    max-height: 300px;
 }
 
 .typing-text p span {
@@ -188,4 +188,30 @@ footer:hover {
     border: 1px solid #FFF;
     border: 1px solid #00FF00; 
     transition: 0.9s;
+}
+
+/* Smaller Devices*/
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0;
+    }
+    
+    .logo {
+        font-size: large;
+    }
+
+    .message {
+        font-size: small;
+    }
+
+    .typing-text p {
+        font-size: medium;
+    }
+
+    .result-details li span, .result-details li p {
+        font-size: smaller;
+    }
+    .content button {
+        width: 100%;
+    }
 }

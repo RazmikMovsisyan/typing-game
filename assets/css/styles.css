@@ -115,7 +115,7 @@ body {
 
 @keyframes blink {
     50% {
-        opacity: 10;
+        opacity: 1;
     }
 }
 .content-box .content {

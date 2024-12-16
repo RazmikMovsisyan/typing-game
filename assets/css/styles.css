@@ -18,7 +18,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: #252525;
-    padding: 1vw 10vw;
+    padding: 3vw 6vw 1vw 6vw;
 }
 
 .logo {
@@ -181,6 +181,7 @@ footer {
     text-align: center;
     border: 1px solid #FFF;
     letter-spacing: 2px;
+    margin: 0 40px;
 }
 
 footer:hover {
@@ -216,13 +217,14 @@ footer:hover {
     }
     footer {
         font-size: x-small;
+        margin: 0;
     }
 }
 
 /* Larger Screens*/
 @media (min-width: 769px) and (max-width: 1024px) {
     .wrapper {
-        padding: 60px;
+        padding: 3vw 7vw 1vw 7vw;
     }
 
     .message {
@@ -238,5 +240,9 @@ footer:hover {
     }
     .content button {
         width: 100%;
+    }
+    .content-box .typing-text {
+        overflow: visible;
+        max-height: 600px;
     }
 }

@@ -140,3 +140,9 @@ document.addEventListener('keydown', () => {
     sound.play();
   }
 });
+
+const toggleButton = document.getElementById('toggle-sound');
+toggleButton.addEventListener('click', () => {
+  soundEnabled = !soundEnabled;
+  toggleButton.textContent = soundEnabled ? 'Keyboard Sound ON' : 'Keyboard Sound OFF';
+});

@@ -2,12 +2,14 @@
 
 [Click here to go to the Live Project](https://razmikmovsisyan.github.io/typing-game/)
 
-![Responsice Mockup](/assets/readme/images/typing-speed-game-mockup.png)
+![Responsive Mockup](/assets/readme/images/typing-speed-game-mockup.png)
 
 Welcome to my very first Javascript Project!
 
-The website features a typing game that allows users to test and improve their typing speed. It tracks metrics such as words per minute (WPM), characters per minute (CPM), and errors made during the game. 
-Players are timed and must type the displayed words correctly.
+The website features a typing game that allows users to test and improve their typing speed by tracking metrics such as words per minute (WPM), characters per minute (CPM), and errors. 
+Players must type the displayed words correctly within a timed session.
+
+I chose a typing game because it enhances typing speed and accuracy, critical skills for programmers. It offers an engaging experience, combining skill development with gamification, making it both practical and enjoyable for those who spend significant time coding, while also providing a way to track progress.
 
 ## **Table of contents**
 
@@ -80,7 +82,7 @@ Elements like the results table (showing WPM and CPM), footer, and other interac
 
 - **HTML:** Hyper Text Markup Language
 - **CSS:** Cascading Style Sheets
-- **JavaSctipt**
+- **JavaScript**
 
 #### Adaptive Layout
 
@@ -220,6 +222,7 @@ To further improve the typing game, I would add the following features:
 - **Difficulty Levels:** Allow users to choose between beginner, intermediate, and advanced levels with varying word complexity.
 - **Maximum Score Tracking:** Display the highest achieved score instead of reseting the score.
 - **Timer Options:** Introduce customizable timers for short or extended typing sessions.
+- **Programming Language:** Snippets like HTML, CSS, JavaScript, or Python with their symbols and syntaxes.
 
 ## Credits
 
@@ -227,7 +230,7 @@ To further improve the typing game, I would add the following features:
 Used to create a mockup for testing website responsiveness on various devices.
 - [Google Fonts](https://fonts.google.com/)
 Used for the Orbitron font on the site.
-- [Icons8](https://www.flaticon.com/free-icon/typing_2222388/) Favicon.
+- [Icons8 Website-Favicon](https://www.flaticon.com/free-icon/typing_2222388/) Favicon.
 
 ## Finished Product
 

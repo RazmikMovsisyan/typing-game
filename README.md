@@ -4,9 +4,10 @@
 
 ![Responsice Mockup](/assets/readme/images/typing-speed-game-mockup.png)
 
-Welcome to my ver first Javascript Project!
+Welcome to my very first Javascript Project!
 
-The website features a typing game that allows users to test and improve their typing speed. It tracks metrics such as words per minute (WPM), characters per minute (CPM), and errors made during the game. Players are timed and must type the displayed words correctly.
+The website features a typing game that allows users to test and improve their typing speed. It tracks metrics such as words per minute (WPM), characters per minute (CPM), and errors made during the game. 
+Players are timed and must type the displayed words correctly.
 
 ## **Table of contents**
 
@@ -56,13 +57,30 @@ The website features a typing game that allows users to test and improve their t
 
 ## **Features**
 
-**Typing Game** is a sleek, mobile-first, and responsive typing test designed to improve users' typing speed and accuracy. With a minimalist layout, it provides an engaging and accessible experience. The game includes real-time feedback, speed and accuracy metrics, and a restart feature for continuous practice.
+**Typing Game** is a responsive typing test designed to improve users' typing speed and accuracy. 
+With a minimalist layout, it provides an engaging and accessible experience. 
+
+The game includes real-time feedback, speed and accuracy metrics, and a try again/restart feature for continuous practice.
+
+| ![game-over-score](assets/readme/images/game-over-score.png) | ![correct-false](assets/readme/images/correct-false.png) |
+|:---:|:---:|
+
+The logo, message area, footer, and buttons feature letter spacing to create a retro, arcade-style design.
+I also adjusted the selector color to match the overall aesthetic.
+
+![selection-color](assets/readme/images/selection-color.png)
+
+To make the game more interactive, I implemented a keyboard sound effect that enhances user engagement. Additionally, I added a toggle button directly beneath the text logo, allowing users to easily enable or disable the sound effect.  
+
+All buttons feature hover and active states with smooth animations for a polished feel. The buttons also include a pointer cursor effect to indicate interactivity. 
+
+Elements like the results table (showing WPM and CPM), footer, and other interactive components include hover effects, adding playful touches and vibrant colors to the design.  
 
 #### **Used Technologies**
 
 - **HTML:** Hyper Text Markup Language
 - **CSS:** Cascading Style Sheets
-- **JavaSctipt:**
+- **JavaSctipt**
 
 #### Adaptive Layout
 
@@ -74,7 +92,7 @@ I chose the CMD light green color on a dark grey background because it provides 
 
 For the text feedback, the shining shadowed green for correctly typed characters visually rewards accurate typing, creating a sense of achievement, while the simple red for errors offers a clear and immediate indicator of mistakes. This logical contrast helps users focus and improve their typing accuracy effectively.
 
-![html error](assets/readme/images/color-scheme.png)
+![color-scheme](assets/readme/images/color-scheme.png)
 
 ## Fonts
 
@@ -104,21 +122,21 @@ Due to the simple and compact one-page layout, I didn’t encounter any signific
 
 Using the input method, I copied and pasted the code of styles.css in **Jigsaw** to validate.
 
-Result: No errors found.
+**Result: No errors found.**
 
 #### JavaScript
 
 Using **JsHint** I tested my JavaScript code.
 
-Result: No errors found.
+**Result: No errors found.**
 
 Links to PDF Files of Validated Source Codes:
 
-- [`index.html`](assets/readme/pdf-files/html-validator.pdf)
+- [`index.html`](assets/readme/pdf-files/html-code-validation.pdf)
 
-- [`styles.css`](assets/readme/pdf-files/css-code-validation.pdf).
+- [`styles.css`](assets/readme/pdf-files/css-code-validation.pdf)
 
-- [`script.js`](assets/readme/pdf-files/javascript-code-validation.pdf).
+- [`script.js`](assets/readme/pdf-files/javascript-code-validation.pdf)
 
 ## Bugs
 

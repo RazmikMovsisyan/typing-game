@@ -199,6 +199,11 @@ footer:hover {
     letter-spacing: 3px;
 }
 
+::selection {
+    color: #000000;
+    background: #00FF00;
+  }
+
 /* Smaller Devices*/
 @media (max-width: 768px) {
     .wrapper {

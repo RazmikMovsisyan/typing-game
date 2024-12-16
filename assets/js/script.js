@@ -128,3 +128,15 @@ function finishGame() {
 loadParagraph();
 inpField.addEventListener("input", handleTyping);
 tryAgainBtn.addEventListener("click", resetGame);
+
+// Keydown sound effect
+const sound = new Audio('assets/audio/keydown.wav');
+let soundEnabled = true;
+
+// Eventlistener for keydown sound effect
+document.addEventListener('keydown', () => {
+  if (soundEnabled) {
+    sound.currentTime = 0;
+    sound.play();
+  }
+});

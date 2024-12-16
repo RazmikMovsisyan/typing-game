@@ -225,6 +225,9 @@ footer:hover {
         font-size: x-small;
         margin: 0;
     }
+    #toggle-sound {
+        font-size: small;
+    }
 }
 
 /* Larger Screens*/
